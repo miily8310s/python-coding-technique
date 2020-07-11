@@ -28,3 +28,28 @@ if not True in seats[init - 1 : init + num - 1]: # Trueが無い時
     seats[init - 1 : init + num - 1] = [True] * num
 print(seats)
 
+#標準入力された値から辞書を作成する
+num = int(input())
+keys = []
+values = []
+for i in range(num):
+    input_line = input().rstrip().split(' ')
+    keys.append(int(input_line[1]))
+    values.append(input_line[0])
+d = dict(zip(keys, values))
+
+# 辞書のキーをソートする、返却値はリスト
+# 数字を昇順に並び替えたいときはint型にする必要がある
+print(sorted(d)) # returns ['A', 'B', 'C']
+
+# 辞書に代入することでキーと値を追加する
+inputs = {}
+tmp = input().split()
+for i in range(num):
+    inputs[tmp[0]] = inputs[tmp[0]] + int(tmp[1])
+
+# 辞書のキーと値を一行ずつ表示する
+for (key, value) in inputs.items():
+    print(key , value)
+
+# 存在しない云々は存在フラグをつけることで対策できることもある
