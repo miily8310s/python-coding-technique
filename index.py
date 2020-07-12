@@ -67,3 +67,10 @@ if ord(c) in range(ord(x), ord(y)):
     print("true")
 else:
     print("false")
+
+# 数字を文字型にする
+print(str(111)) # returns '111'
+
+# リストで何番目にでてくるか
+lis = ['aa', 'bb', 'cc']
+print(lis.index('aa')) # returns 0
