@@ -53,3 +53,17 @@ for (key, value) in inputs.items():
     print(key , value)
 
 # 存在しない云々は存在フラグをつけることで対策できることもある
+
+# アルファベットの何番目かを表示
+# 大文字と小文字で返却値が異なるので注意
+d = input()
+print(ord(d))
+
+# 一番目と二番目のアルファベットの間の範囲に入っているか確認
+x = input()
+y = input()
+c = input()
+if ord(c) in range(ord(x), ord(y)):
+    print("true")
+else:
+    print("false")
