@@ -82,3 +82,7 @@ print(*words, sep="\n") # returns hoge\n emp
 # 指定した値をリストから一番最初に出てくる要素を削除する
 word = 'emp'
 words.remove(word) # returns words = ['hoge']
+
+# ある値のリスト格納回数を取得
+sinban = ['ball', 'strike', 'ball']
+sinban.count('ball') # returns 2
