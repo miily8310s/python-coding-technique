@@ -74,3 +74,11 @@ print(str(111)) # returns '111'
 # リストで何番目にでてくるか
 lis = ['aa', 'bb', 'cc']
 print(lis.index('aa')) # returns 0
+
+# リストの各値を改行ありで表示する
+words = ['hoge', 'emp']
+print(*words, sep="\n") # returns hoge\n emp
+
+# 指定した値をリストから一番最初に出てくる要素を削除する
+word = 'emp'
+words.remove(word) # returns words = ['hoge']
