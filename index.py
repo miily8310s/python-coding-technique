@@ -86,3 +86,8 @@ words.remove(word) # returns words = ['hoge']
 # ある値のリスト格納回数を取得
 sinban = ['ball', 'strike', 'ball']
 sinban.count('ball') # returns 2
+
+# 余り計算は2 % 5みたいに左の数字が右の数字を下回る場合、左の数字がそのまま答えになる
+
+# 以下１行で入力された数値をリスト化する
+visitors = [int(k) for k in input().split(' ')]
