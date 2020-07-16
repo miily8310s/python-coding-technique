@@ -91,3 +91,7 @@ sinban.count('ball') # returns 2
 
 # 以下１行で入力された数値をリスト化する
 visitors = [int(k) for k in input().split(' ')]
+
+# 文字列の下4桁だけ出力
+bango = '001133'
+print(bango[-4:]) # returns '1133'
