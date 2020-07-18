@@ -95,3 +95,12 @@ visitors = [int(k) for k in input().split(' ')]
 # 文字列の下4桁だけ出力
 bango = '001133'
 print(bango[-4:]) # returns '1133'
+
+# 文字列が～で始まる～で終わるを判定
+mojiretu = 'study'
+print(mojiretu.startswith('s')) # returns True
+print(mojiretu.endswith('y')) # returns True
+
+# タプルでも～で始まる終わるの判定可能
+boin = ('a', 'i', 'u', 'e', 'o')
+print(mojiretu.endswith(boin)) # returns False
